@@ -499,60 +499,7 @@ _ "The FemeX Prime V2.0 does not wait for power; it carries its own. With the C-
         </div>
       </div>
 
-      <div class="feature-card">
-        <svg viewBox="0 0 52 52" fill="none">
-          <circle cx="26" cy="26" r="22" stroke="#fde047" stroke-width="3" fill="#bc13fe0c"/>
-          <ellipse cx="26" cy="26" rx="12" ry="5" stroke="#00f3ff" stroke-width="2"/>
-          <ellipse cx="26" cy="26" rx="15" ry="3" stroke="#bc13fe" stroke-width="1"/>
-          <circle cx="26" cy="26" r="4" fill="#fde047" />
-        </svg>
-        <div class="feature-title">C-14 Power Guard <small>[3.3V Stable]</small></div>
-        <div class="feature-desc">
-          Atomic-decay power stabilization for consistent current over 50 years—defensive logic array protection and sovereign uptime without external dependency.
-        </div>
-        <div class="feature-spec">
-          Atomic-level power stabilization · Sovereign uptime
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Architecture Section -->
-  <section class="arch-section" id="architecture">
-    <div class="arch-head">FemeX Prime V2.0 Hardware Specifications</div>
-    <div class="arch-list">
-      <div class="arch-item">
-        <strong>Process Node:</strong><br> 65nm photonic
-      </div>
-      <div class="arch-item">
-        <strong>Security Model:</strong><br> Zero-trust hardware architecture
-      </div>
-      <div class="arch-item">
-        <strong>Protection Level:</strong><br> Sovereign Grade — Active
-      </div>
-      <div class="arch-item">
-        <strong>Operational Lifespan:</strong><br> <span style="color:var(--gold)">50 years</span>
-      </div>
-      <div class="arch-item">
-        <strong>Status:</strong><br> GDSII System Master Finalized
-      </div>
-      <div class="arch-item">
-        <strong>Location:</strong><br> Lagos, Nigeria
-      </div>
-      <div class="arch-item">
-        <strong>Partners:</strong><br> Silicon Catalyst, NVIDIA Inception Program
-      </div>
-      <div class="arch-item">
-        <strong>Chief Architect:</strong><br> <span class="author">Adekoya Jotham</span>
-      </div>
-    </div>
-  </section>
-
-  <div class="quote-section">
-    <span style="font-weight:700;font-size:1.22em;">“</span>
-    Building the hardware foundation for the next 50 years of sovereign data.
-    <span style="font-weight:700;font-size:1.22em;">”</span>
-  </div>
 #bgCanvas {
     position: fixed;
     top: 0;
@@ -727,6 +674,132 @@ animate();
 init();
 draw();
   <footer class="footer">
+
+      <div class="feature-card">
+        <svg viewBox="0 0 52 52" fill="none">
+          <circle cx="26" cy="26" r="22" stroke="#fde047" stroke-width="3" fill="#bc13fe0c"/>
+          <ellipse cx="26" cy="26" rx="12" ry="5" stroke="#00f3ff" stroke-width="2"/>
+          <ellipse cx="26" cy="26" rx="15" ry="3" stroke="#bc13fe" stroke-width="1"/>
+          <circle cx="26" cy="26" r="4" fill="#fde047" />
+        </svg>
+        <div class="feature-title">C-14 Power Guard <small>[3.3V Stable]</small></div>
+        <div class="feature-desc">
+          Atomic-decay power stabilization for consistent current over 50 years—defensive logic array protection and sovereign uptime without external dependency.
+        </div>
+        <div class="feature-spec">
+          Atomic-level power stabilization · Sovereign uptime
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Section -->
+  <section class="arch-section" id="architecture">
+    <div class="arch-head">FemeX Prime V2.0 Hardware Specifications</div>
+    <div class="arch-list">
+      <div class="arch-item">
+        <strong>Process Node:</strong><br> 65nm photonic
+      </div>
+      <div class="arch-item">
+        <strong>Security Model:</strong><br> Zero-trust hardware architecture
+      </div>
+      <div class="arch-item">
+        <strong>Protection Level:</strong><br> Sovereign Grade — Active
+      </div>
+      <div class="arch-item">
+        <strong>Operational Lifespan:</strong><br> <span style="color:var(--gold)">50 years</span>
+      </div>
+      <div class="arch-item">
+        <strong>Status:</strong><br> GDSII System Master Finalized
+      </div>
+      <div class="arch-item">
+        <strong>Location:</strong><br> Lagos, Nigeria
+      </div>
+      <div class="arch-item">
+        <strong>Partners:</strong><br> Silicon Catalyst, NVIDIA Inception Program
+      </div>
+      <div class="arch-item">
+        <strong>Chief Architect:</strong><br> <span class="author">Adekoya Jotham</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="quote-section">
+    <span style="font-weight:700;font-size:1.22em;">“</span>
+    Building the hardware foundation for the next 50 years of sovereign data.
+    <span style="font-weight:700;font-size:1.22em;">”</span>
+  </div>
+
+<div class="founder-speech-container">
+    <div class="speech-content">
+        <h2 class="speech-title">A NEW ERA OF ARCHITECTURE</h2>
+        <p class="speech-text">
+            For decades, we have been told that heat is an inevitable byproduct of power, and that security is a software patch away. At <span class="highlight">AntiNex TechX</span>, we refuse those limitations. 
+        </p>
+        <p class="speech-text">
+            By merging the raw physics of 3D Photonic Crystals with the independent pulse of the C-14 Power Guard, we have built more than a chip. We have built an <span class="highlight">Omninexus</span>—a system that does not just process data, but protects it with the very laws of the universe.
+        </p>
+        <p class="speech-text">
+            This is the transition from dependence to <span class="highlight">Sovereignty</span>. Out with the old silicon; in with the speed of light.
+        </p>
+        
+        <div class="signature">
+            <p>Jotham Adekoya</p>
+            <span>Lead Architect & Founder</span>
+        </div>
+    </div>
+</div>
+
+.founder-speech-container {
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid rgba(0, 243, 255, 0.1);
+}
+
+.speech-title {
+    font-family: 'Times New Roman', serif; /* Classic English Serif Style */
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    color: var(--gold);
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.speech-text {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.highlight {
+    color: var(--neon-blue);
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+.signature {
+    margin-top: 50px;
+    font-family: 'Courier New', monospace;
+}
+
+.signature p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.signature span {
+    color: var(--neon-purple);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+  
     &copy; 2026 <strong>AntiNex TechX</strong>
     <span class="separator">&mdash;</span>
     Engineering the standard for <span class="author">zero-trust hardware</span>.
