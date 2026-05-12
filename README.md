@@ -832,3 +832,16 @@ https://github.com/user-attachments/assets/a5b17e50-5782-41a5-9336-d21ff670eeb7
     
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
+<div class="card">
+    <h3>C-14 Power Guard</h3>
+    ![AntiNex TechX Logo](logo.png) 
+    # ANTINEX TECHX ... 
+    <p>Integrated atomic-level power stabilization...</p>
+</div><div class="card">
+    <h3>C-14 Power Guard</h3>
+    <p>Integrated atomic-level power stabilization for 50 years of continuous operation, ensuring sovereign uptime.</p>
+</div><link rel="icon" type="image/jpeg" href="Favicon.jpg">
+<link rel="shortcut icon" href="Favicon.jpg">
+<link rel="apple-touch-icon" href="Favicon.jpg"><p style="margin-top: 10px; font-size: 0.9rem; color: #4da6ff;">
+    "Building the hardware foundation for the next 50 years of sovereign data."
+</p>
