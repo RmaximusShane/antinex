@@ -127,7 +127,31 @@ AntiNex TechX represents the frontier of 65nm photonic computing and hardware se
       overflow-x: hidden;
       min-height: 100vh;
     }
+<div class="vault-container">
+    <h2 style="text-align: center; color: #fff; margin-bottom: 30px; letter-spacing: 2px;">SYSTEM DIAGNOSTICS: FEMEX PRIME V2.0</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
+        
+        <div class="video-frame">
+            <div class="video-label">CORE_SIM_01.MP4 // PHOTONIC_FLOW</div>
+            <video controls autoplay loop muted playsinline style="width: 100%; display: block;">
+                <source src="femex_simulation.mp4" type="video/mp4">
+            </video>
+        </div>
 
+        <div class="video-frame">
+            <div class="video-label">LOGIC_SIM_02.MP4 // GUARDIAN_ACTIVE</div>
+            <video controls autoplay loop muted playsinline style="width: 100%; display: block;">
+                <source src="femex_diagnostics.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+
+    <p style="margin-top: 30px; color: #94a3b8; font-size: 0.85rem; text-align: center; font-family: monospace;">
+        <span style="color: var(--neon-blue);">●</span> AUTHENTICATED: ADEKOYA JOTHAM <span style="margin-left: 20px; color: var(--neon-purple);">●</span> ENCRYPTION: SOVEREIGN-SHARED
+    </p>
+</div>
     .animated-bg {
       position: fixed;
       z-index: 0;
