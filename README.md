@@ -808,5 +808,15 @@ https://github.com/user-attachments/assets/a5b17e50-5782-41a5-9336-d21ff670eeb7
             <p style="font-size: 0.8rem; color: #64748b;">Neural mapping of 3D stacked optical RAM.</p>
         </div>
 
-    </div>
+    </div><head>
+    <meta charset="UTF-8">
+    <title>AntiNex TechX | Sovereign Photonic Architecture</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <style>
+        /* ... your existing CSS ... */
+    </style>
+</head>
 </section>
+<img width="610" height="577" alt="Favicon" src="https://github.com/user-attachments/assets/c49874aa-8a21-4e4e-8d01-1a0a76239454" />
