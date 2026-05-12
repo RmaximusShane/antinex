@@ -726,6 +726,12 @@
                 </svg>
             </div>
             <h3>C-14 Power Guard <span>[3.3V Stable]</span></h3>
+            <section class="hero">
+    <img src="logo.png" alt="AntiNex TechX Logo" style="width: 150px; height: 150px; margin-bottom: 20px;">
+    <h1>ANTINEX <span style="color:white">TECHX</span></h1>
+    ...
+</section>
+
             <p>Continuous atomic-decay power stabilization delivers consistent current to defensive logical arrays across a 50-year operational lifecycle.</p>
         </div>
     </section>
