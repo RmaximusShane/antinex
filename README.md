@@ -144,6 +144,7 @@ _ "The FemeX Prime V2.0 does not wait for power; it carries its own. With the C-
 ## Architecture
 
 **FemeX Prime V2.0 Hardware Specifications**
+<img width="1408" height="768" alt="Gemini_Generated_Image_y3awm1y3awm1y3aw" src="https://github.com/user-attachments/assets/e9b3e023-678d-4367-8bb6-075e48d7610f" />
 
 - **Process Node:** 65nm photonic
 - **Security Model:** Zero-trust hardware architecture
@@ -552,7 +553,99 @@ _ "The FemeX Prime V2.0 does not wait for power; it carries its own. With the C-
     Building the hardware foundation for the next 50 years of sovereign data.
     <span style="font-weight:700;font-size:1.22em;">”</span>
   </div>
+#bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(circle at center, #0a0f1e 0%, #020617 100%);
+}
 
+/* Add a subtle glow to the whole page to match the photons */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 243, 255, 0.05) 0%, transparent 80%);
+    pointer-events: none;
+    z-index: 0;
+}
+const canvas = document.getElementById('bgCanvas');
+const ctx = canvas.getContext('2d');
+
+let width, height, nodes = [];
+const nodeCount = 80; // Density of the photonic lattice
+const connectionDist = 150; // Max distance for "Light Interweaving"
+
+function init() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+    nodes = [];
+
+    for (let i = 0; i < nodeCount; i++) {
+        nodes.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - 0.5) * 0.8,
+            vy: (Math.random() - 0.5) * 0.8,
+            radius: Math.random() * 1.5 + 1
+        });
+    }
+}
+
+function draw() {
+    ctx.clearRect(0, 0, width, height);
+    
+    // Draw the "Data Streams" (Connections)
+    for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+            const dx = nodes[i].x - nodes[j].x;
+            const dy = nodes[i].y - nodes[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < connectionDist) {
+                ctx.beginPath();
+                // Opacity based on distance to simulate light fading
+                const opacity = 1 - (dist / connectionDist);
+                ctx.strokeStyle = `rgba(0, 243, 255, ${opacity * 0.2})`;
+                ctx.lineWidth = 0.5;
+                ctx.moveTo(nodes[i].x, nodes[i].y);
+                ctx.lineTo(nodes[j].x, nodes[j].y);
+                ctx.stroke();
+            }
+        }
+    }
+
+    // Draw the "Photons" (Nodes)
+    nodes.forEach(node => {
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(0, 243, 255, 0.7)";
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = "#00f3ff";
+        ctx.fill();
+
+        // Move nodes
+        node.x += node.vx;
+        node.y += node.vy;
+
+        // Bounce off walls
+        if (node.x < 0 || node.x > width) node.vx *= -1;
+        if (node.y < 0 || node.y > height) node.vy *= -1;
+    });
+
+    requestAnimationFrame(draw);
+}
+
+// Re-init on resize to keep layout perfect
+window.addEventListener('resize', init);
+
+// Start the Photonic Engine
+init();
+draw();
   <footer class="footer">
     &copy; 2026 <strong>AntiNex TechX</strong>
     <span class="separator">&mdash;</span>
