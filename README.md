@@ -642,7 +642,87 @@ function draw() {
 
 // Re-init on resize to keep layout perfect
 window.addEventListener('resize', init);
+const canvas = document.getElementById('bgCanvas');
+const ctx = canvas.getContext('2d');
 
+let width, height;
+let particles = [];
+const particleCount = 150; // Increased for higher "Electric" density
+
+function init() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+    particles = [];
+    for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+    }
+}
+
+class Particle {
+    constructor() {
+        this.reset();
+    }
+
+    reset() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        // Faster, linear movement to simulate "Data Packets"
+        this.vx = (Math.random() - 0.5) * 4; 
+        this.vy = (Math.random() - 0.5) * 4;
+        this.history = [];
+        this.maxHistory = 15; // Length of the light trail
+        this.color = Math.random() > 0.5 ? '#00f3ff' : '#bc13fe'; // Cyan and Purple spectrum
+    }
+
+    update() {
+        this.history.push({x: this.x, y: this.y});
+        if (this.history.length > this.maxHistory) this.history.shift();
+
+        this.x += this.vx;
+        this.y += this.vy;
+
+        // Reset if they leave the screen
+        if (this.x < 0 || this.x > width || this.y < 0 || this.y > height) {
+            this.reset();
+        }
+    }
+
+    draw() {
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = this.color;
+        ctx.lineCap = 'round';
+
+        // Draw the trail (the "moving" effect)
+        for (let i = 0; i < this.history.length - 1; i++) {
+            const p1 = this.history[i];
+            const p2 = this.history[i+1];
+            const opacity = i / this.history.length;
+            ctx.globalAlpha = opacity;
+            ctx.moveTo(p1.x, p1.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.stroke();
+        }
+    }
+}
+
+function animate() {
+    // Semi-transparent clear creates a "Motion Blur" trailing effect
+    ctx.fillStyle = 'rgba(2, 6, 23, 0.2)'; 
+    ctx.fillRect(0, 0, width, height);
+    
+    particles.forEach(p => {
+        p.update();
+        p.draw();
+    });
+    requestAnimationFrame(animate);
+}
+
+window.addEventListener('resize', init);
+init();
+animate();
 // Start the Photonic Engine
 init();
 draw();
