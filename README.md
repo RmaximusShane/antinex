@@ -151,6 +151,35 @@ _ "The FemeX Prime V2.0 does not wait for power; it carries its own. With the C-
 - **Protection Level:** Sovereign Grade - Active
 - **Operational Lifespan:** 50 years
 
+- # System Diagnostics Video Simulation;
+- 
+
+https://github.com/user-attachments/assets/f6e0040c-5d81-49d5-976f-6450a960a8b8
+
+
+https://github.com/user-attachments/assets/1e1b950f-48a2-47a5-8d6b-8a4eb2070406
+
+
+
+https://github.com/user-attachments/assets/295e388e-0121-41f2-9e61-e117acfcdbf4
+
+
+
+https://github.com/user-attachments/assets/55a916a9-e356-44c5-b8c3-a7444b7f86e8
+
+
+
+
+
+https://github.com/user-attachments/assets/0d7eb900-aede-47f9-82f8-d8d836a738d9
+
+
+
+
+https://github.com/user-attachments/assets/156f8ded-165d-4e24-8627-bf045350fe33
+
+
+
 
    
 ---
