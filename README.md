@@ -752,3 +752,8 @@
 
 </body>
 </html>
+<img width="738" height="577" alt="AntiNex TechX" src="https://github.com/user-attachments/assets/3eadd11a-8799-497c-9987-ecaeb9d3a839" />
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+    <img src="logo.png" style="height: 80px; width: auto;">
+    <h1>ANTINEX <span style="color:white">TECHX</span></h1>
+</div>
