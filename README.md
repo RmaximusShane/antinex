@@ -1,28 +1,11 @@
 
 
-https://github.com/user-attachments/assets/83bb0616-c63a-4ebd-b60e-4a290a79fcaf
-
-
-
-https://github.com/user-attachments/assets/5ae6f42a-1fc2-4abf-beba-70f6167f4561
-
-
-
-https://github.com/user-attachments/assets/002de74a-da73-4a07-909b-582476d9c0ae
-
-
-
-https://github.com/user-attachments/assets/716d05c9-992d-42de-9ad6-baf901b595b4
 
 
 
 
 
-Uploading Femex_Prime_V2_Dashboard_Simulation (3).mp4…
 
-
-
-https://github.com/user-attachments/assets/e5f9f3e7-30cc-44e9-90f4-9758d08c209c
 
 # ANTINEX TECHX
 
@@ -80,6 +63,81 @@ AntiNex TechX represents the frontier of 65nm photonic computing and hardware se
 - **Security Model:** Zero-trust hardware architecture
 - **Protection Level:** Sovereign Grade - Active
 - **Operational Lifespan:** 50 years
+/* Modal (Overlay) Background */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(2, 6, 23, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background: var(--glass);
+    margin: 5% auto;
+    padding: 40px;
+    border: 1px solid var(--neon-purple);
+    width: 70%;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 50px rgba(188, 19, 254, 0.2);
+    animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-btn {
+    color: var(--neon-blue);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}<div id="techModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle" style="color: var(--gold);">DEEP DATA ANALYSIS</h2>
+        <hr style="border: 0.5px solid rgba(255,255,255,0.1);">
+        <p id="modalBody" style="line-height: 1.8; font-size: 1.1rem; color: #cbd5e1;"></p>
+        <div style="margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.3); border-left: 4px solid var(--neon-blue);">
+            <small style="font-family: monospace; color: var(--neon-blue);">ENCRYPTION KEY: ANTINEX-SIG-0992</small>
+        </div>
+    </div>
+</div>
+
+function openDepth(type) {
+    const modal = document.getElementById("techModal");
+    const title = document.getElementById("modalTitle");
+    const body = document.getElementById("modalBody");
+
+    if(type === 'sextabyte') {
+        title.innerText = "SEXTABYTE INDEXING ARCHITECTURE";
+        body.innerText = "Our 128-channel spectral multiplexing isn't just about speed; it's about density. By stacking data at the atomic level in 3D photonic crystals, we achieve 10^21 bits per square millimeter. This bypasses the physical limits of traditional 65nm copper-based silicon.";
+    } else if(type === 'guardian') {
+        title.innerText = "GUARDIAN AI: SIGNAL FINGERPRINTING";
+        body.innerText = "The Guardian AI operates at the physical layer. It analyzes the 'wave-signature' of incoming data. If a hacker tries to inject code, the Guardian detects the microscopic latency change (femtoseconds) and immediately 'melts' the logic path to isolate the threat.";
+    }
+
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("techModal").style.display = "none";
+}
+<div class="card" onclick="openDepth('sextabyte')" style="cursor: pointer;">
+    <h3>Sextabyte Indexing</h3>
+    <p>Click to view deep architecture specs...</p>
+</div>
+
+<div class="card" onclick="openDepth('guardian')" style="cursor: pointer;">
+    <h3>Guardian AI</h3>
+    <p>Click to view security protocols...</p>
+</div>
 
 ---
 
