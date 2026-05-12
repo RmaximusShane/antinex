@@ -1,10 +1,68 @@
+#boot-screen {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--neon-blue);
+}
+
+.boot-text {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--neon-blue);
+    animation: typing 1.5s steps(30, end), blink .75s step-end infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes typing { from { width: 0 } to { width: 100% } }
+@keyframes blink { from, to { border-color: transparent } 50% { border-color: var(--neon-blue); } }
+
+.loading-bar {
+    width: 250px;
+    height: 2px;
+    background: #1e293b;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-progress {
+    width: 0%;
+    height: 100%;
+    background: var(--neon-blue);
+    animation: load 2.5s ease-in-out forwards;
+}
+
+@keyframes load { 0% { width: 0%; } 100% { width: 100%; } }
+<div id="boot-screen">
+    <div class="boot-text">INITIALIZING ANTINEX OS...</div>
+    <div class="boot-text" style="animation-delay: 1.5s;">LOADING PHOTONIC CORES...</div>
+    <div class="boot-text" style="animation-delay: 3s;">DECRYPTING SOVEREIGN KEY...</div>
+    <div class="loading-bar" style="margin-top: 20px;">
+        <div class="loading-progress"></div>
+    </div>
+</div>
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const bootScreen = document.getElementById('boot-screen');
+        bootScreen.style.transition = 'opacity 1s ease';
+        bootScreen.style.opacity = '0';
+        setTimeout(() => {
+            bootScreen.style.display = 'none';
+        }, 1000);
+    }, 4500); // 4.5 seconds for maximum dramatic effect
+});
 
 
 
-
-
-
-
+<img width="738" height="577" alt="AntiNex TechX" src="https://github.com/user-attachments/assets/d2e478ea-e121-4326-9922-d2757df8416a" />
 
 
 # ANTINEX TECHX
