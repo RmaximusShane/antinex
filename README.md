@@ -1,3 +1,4 @@
+<img width="800" height="800" alt="Null Snatch" src="https://github.com/user-attachments/assets/df9e57ea-2026-40e6-816c-207b0873ba2b" />
 # a<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -536,6 +537,27 @@
             position: relative;
             z-index: 10;
         }
+<section class="hero">
+    <img src="antinex_logo.jpg" alt="AntiNex TechX Logo" style="width: 200px; height: auto; border-radius: 15px; box-shadow: 0 0 20px rgba(34, 211, 238, 0.4); margin-bottom: 20px;">
+    
+    <h1>ANTINEX <span style="color:white">TECHX</span></h1>
+    <p class="subtitle">Sovereign Photonic Systems</p>
+    
+    <div class="status-bar">PROTECTION LEVEL: SOVEREIGN GRADE - ACTIVE</div>
+    <p style="margin-top: 40px; color: #94a3b8;">Lead Architect: <span class="highlight">Adekoya Jotham</span></p>
+</section>
+
+https://github.com/user-attachments/assets/dcd6a585-9001-431b-9f27-a5cedb582c6b
+
+
+
+https://github.com/user-attachments/assets/766c1d1a-b4b9-48f7-bb71-8ba2587db413
+
+
+
+https://github.com/user-attachments/assets/a5b17e50-5782-41a5-9336-d21ff670eeb7
+
+<img width="738" height="577" alt="AntiNex TechX" src="https://github.com/user-attachments/assets/0e2c66b3-104a-4be9-bd9b-f774464b8502" />
 
         .video-container {
             background: var(--surface);
@@ -757,3 +779,34 @@
     <img src="logo.png" style="height: 80px; width: auto;">
     <h1>ANTINEX <span style="color:white">TECHX</span></h1>
 </div>
+<section style="padding: 60px 10%; background: #020617; text-align: center;">
+    <h2 style="color: var(--accent-gold); letter-spacing: 3px; margin-bottom: 40px;">DIAGNOSTICS & SIMULATION VAULT</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        
+        <div class="card" style="padding: 15px;">
+            <video width="100%" height="auto" controls loop muted style="border-radius: 8px; border: 1px solid var(--accent-cyan);">
+                <source src="FemeX_Simulation.mp4" type="video/mp4">
+            </video>
+            <h4 style="margin: 15px 0 5px 0;">Architecture Simulation</h4>
+            <p style="font-size: 0.8rem; color: #64748b;">Visualizing 128-channel spectral multiplexing.</p>
+        </div>
+
+        <div class="card" style="padding: 15px;">
+            <video width="100%" height="auto" controls loop muted style="border-radius: 8px; border: 1px solid var(--accent-cyan);">
+                <source src="Femex_Prime_V2_Dashboard_Simulation.mp4" type="video/mp4">
+            </video>
+            <h4 style="margin: 15px 0 5px 0;">Real-Time Diagnostics</h4>
+            <p style="font-size: 0.8rem; color: #64748b;">Guardian AI latency fingerprinting dashboard.</p>
+        </div>
+
+        <div class="card" style="padding: 15px;">
+            <video width="100%" height="auto" controls loop muted style="border-radius: 8px; border: 1px solid var(--accent-cyan);">
+                <source src="AI_Data_Management_Simulation.mp4" type="video/mp4">
+            </video>
+            <h4 style="margin: 15px 0 5px 0;">Sextabyte Data Logic</h4>
+            <p style="font-size: 0.8rem; color: #64748b;">Neural mapping of 3D stacked optical RAM.</p>
+        </div>
+
+    </div>
+</section>
