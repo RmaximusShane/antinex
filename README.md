@@ -845,3 +845,11 @@ https://github.com/user-attachments/assets/a5b17e50-5782-41a5-9336-d21ff670eeb7
 <link rel="apple-touch-icon" href="Favicon.jpg"><p style="margin-top: 10px; font-size: 0.9rem; color: #4da6ff;">
     "Building the hardware foundation for the next 50 years of sovereign data."
 </p>
+<div class="video-container">
+    <h2>FemeX Prime V2.0 : Architecture Simulation</h2>
+    
+    <video controls autoplay loop muted playsinline style="width: 100%; border: 1px solid #22d3ee;">
+        <source src="https://rmaximusshane.github.io/antinex/FemeX_Simulation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
