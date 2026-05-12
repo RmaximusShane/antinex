@@ -1,3 +1,4 @@
+<img width="610" height="577" alt="Favicon" src="https://github.com/user-attachments/assets/7c077a5b-93a5-4b6d-91f6-b9b0ffaba7de" />
 <img width="800" height="800" alt="Null Snatch" src="https://github.com/user-attachments/assets/df9e57ea-2026-40e6-816c-207b0873ba2b" />
 # a<!DOCTYPE html>
 <html lang="en">
@@ -820,3 +821,13 @@ https://github.com/user-attachments/assets/a5b17e50-5782-41a5-9336-d21ff670eeb7
 </head>
 </section>
 <img width="610" height="577" alt="Favicon" src="https://github.com/user-attachments/assets/c49874aa-8a21-4e4e-8d01-1a0a76239454" />
+<link rel="icon" type="image/jpeg" href="favicon.jpg">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntiNex TechX | Sovereign Photonic Architecture</title>
+    
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
